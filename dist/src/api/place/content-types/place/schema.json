@@ -1,0 +1,41 @@
+{
+    "kind": "collectionType",
+    "collectionName": "places",
+    "info": {
+        "singularName": "place",
+        "pluralName": "places",
+        "displayName": "Place"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "blocks"
+        },
+        "location": {
+            "type": "string"
+        },
+        "type": {
+            "type": "enumeration",
+            "enum": [
+                "Food",
+                "Travel"
+            ]
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    }
+}
